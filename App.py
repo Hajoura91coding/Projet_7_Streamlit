@@ -412,7 +412,7 @@ elif option == 'Prédiction' :
             # url_get = "http://127.0.0.1:8000/"
             # get = requests.get(url_get)
             # st.write(get)
-            url = "http://fastapi:8000/predict"
+            url = "https://fastapihome.herokuapp.com/predict"
             data={"id":chk_id}
             pred_client = requests.post(url, json=data)
             st.write("la classe est : ",pred_client.json())
